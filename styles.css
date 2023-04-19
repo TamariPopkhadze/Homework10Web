@@ -8,13 +8,15 @@
 }
 body{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 .header-div1{
 display: flex;
 flex-direction: column;
 width: 100%;
 height: 601px;
-background-image: url("./imaages/Rectangle\ 1.png");
+background-image: url("./imaages/Rectangle\ 1.jpg");
+background-repeat: no-repeat;
 background-position: 75%;
 position: relative;
 
@@ -32,6 +34,9 @@ position: relative;
 
 
 }
+nav{
+    display: none;
+}
  .header-header{
     display: flex;
     flex-direction: row;
@@ -47,12 +52,14 @@ position: relative;
     
 
 }
+
 .login-div{
     
     width: 78px;
     height: 40px;
     background-color:#F84646;
     display:block;
+    
     }
 .login-p{
     font-weight: 700;
@@ -134,6 +141,7 @@ position: relative;
     z-index: 3;
 }
 .section2-p1{
+    width: 285px;
     font-weight: 800;
     font-size: 36px;
     text-align: center;
@@ -141,6 +149,7 @@ position: relative;
     margin-top: 40px ;
 }
 .section2-p2{
+    width: 316px;
     margin-left:18.5px ;
     margin-right: 18.5px;
     text-align: center;
@@ -232,8 +241,19 @@ position: absolute;
     height: 60px;
     z-index: 3;
 }
+.section3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .image-div1{
-
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-div2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,6 +283,7 @@ position: absolute;
     width: 338px;
     background-color:#F84646;
     margin-top:40px ;
+    margin-bottom: 44px;
 }
 .add-p{
     text-align: center;
@@ -276,9 +297,8 @@ position: absolute;
 .add-p:hover{
     cursor: pointer;
 }
-footer{
-    width: 100%;
-    background-color: #F84646;
+.footer-div1{
+    
     display: flex;
     flex-direction: column;
     margin-top:45px;
@@ -306,10 +326,152 @@ footer{
     color: #E6E6E6;
 }
 .last-p{
+    margin-left: 10%;
     margin-top:124px ;
+    margin-bottom: 75px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: #FFFFFF;
+    
+}
+.second-div{
+    display: flex;
+    flex-direction: column;
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F84646;
+}
+.icons{
+    display:none ;
+}
+
+@media  (min-width: 768px) {
+    .footer-div1{
+
+        margin-top: 71px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .image-div1{
+        
+        justify-content: center;
+        flex-direction:row-reverse;
+      
+        margin-bottom: 120px;
+        gap: 52px;
+    }
+    .image-div2{
+        
+        flex-direction: row;
+        justify-content: center;
+        gap: 52px;
+    }
+    .img1{
+        width: 424px;
+        height: 404px;
+        object-fit: cover;
+    }
+    .add{
+        width: 160px;
+        background-color:#F84646;
+        margin-top:92px ;
+
+    }
+    .add-p{
+        margin-top:12px ;
+        margin-bottom: 12px;
+    }
+    .imagediv1-p2{
+        
+        text-align: start;
+        
+    }
+    .imagediv1-p1{
+        
+        text-align: start;
+    }
+    .second-div{
+    align-items: flex-start;
+    }
+    .section2-div1{
+    
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section1-p2{
+        font-size: 24px;
+        line-height: 39.5px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .header-div1::before{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .header-p1{
+       
+        font-size:64px ;
+        line-height: 82px;
+        
+     
+    }
+    .header-p2{
+        width:55% ;
+        text-align: start;
+        margin-top: 100px;
+    
+    } 
+    .header-div2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 8%;
+        
+
+    }
+    nav{
+        display: flex;
+        margin-left: 25%;
+    }
+   ul{
+    display: flex;
+    gap: 40px;
+   }
+   a{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+   }
+   .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin-bottom: 50px;
+    margin-left: 65%;
+   }
+   .last-p{
+    margin-bottom: 2px;
+   }
+   .header-div1{
+    background-position: left;
+    background-size: cover;
+   }
+  
+    
+}
+@media (min-width: 1025) {
+    
     
 }
