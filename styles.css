@@ -42,7 +42,7 @@ nav{
     flex-direction: row;
     gap:212px;
     margin-top: 35px;
-    margin-left: 20px;
+    margin-left: 10%;
     align-items: center;
     z-index: 1;
 }
@@ -54,7 +54,6 @@ nav{
 }
 
 .login-div{
-    
     width: 78px;
     height: 40px;
     background-color:#F84646;
@@ -351,6 +350,10 @@ footer{
 }
 
 @media  (min-width: 768px) {
+    .header-header{
+        gap: 15%;
+        
+    }
     .footer-div1{
 
         margin-top: 71px;
@@ -362,7 +365,6 @@ footer{
         
         justify-content: center;
         flex-direction:row-reverse;
-      
         margin-bottom: 120px;
         gap: 52px;
     }
@@ -442,7 +444,7 @@ footer{
     }
     nav{
         display: flex;
-        margin-left: 25%;
+        margin-left: 10%;
     }
    ul{
     display: flex;
@@ -468,10 +470,36 @@ footer{
     background-position: left;
     background-size: cover;
    }
+   
+  
   
     
 }
-@media (min-width: 1025) {
-    
+@media (min-width: 1025px) {
+    .header-header{
+        margin-left:2%;
+        gap: 50%;
+    }
+    .img1{
+        width: 504px;
+        height: 480px;
+        object-fit: cover;
+    }
+    .imagediv1-p2{
+        width: 523px;
+        font-size: 16px;
+        line-height: 32px;
+        
+    }
+    .imagediv1-p1{
+        width: 548px;
+       font-size: 64px;
+       line-height: 76px; 
+       
+    }
+    .header-p2{
+        width: 40%;
+    }
+
     
 }
